@@ -1,0 +1,105 @@
+:root {
+    --bg-color: #0a0a16;
+    --text-color: #ffffff;
+    --accent: #00e5ff; /* Cyan */
+    --card-bg: #141428;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: var(--card-bg);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 229, 255, 0.1);
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid #2a2a4a;
+}
+
+h1 {
+    text-align: center;
+    color: var(--accent);
+    margin-bottom: 30px;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #2a2a4a;
+    background-color: var(--bg-color);
+    color: white;
+    outline: none;
+}
+
+input:focus {
+    border-color: var(--accent);
+}
+
+button {
+    padding: 12px 20px;
+    background-color: var(--accent);
+    color: #000;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #66f0ff;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: var(--bg-color);
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #2a2a4a;
+}
+
+li.completed span {
+    text-decoration: line-through;
+    color: #666;
+}
+
+li span {
+    cursor: pointer;
+    flex: 1;
+}
+
+.delete-btn {
+    background-color: transparent;
+    color: #ff4d4d;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+}
+
+.delete-btn:hover {
+    background-color: rgba(255, 77, 77, 0.1);
+}
